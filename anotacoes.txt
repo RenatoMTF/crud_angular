@@ -31,3 +31,7 @@ Verificar branch:
 git branchgit 
 
 
+https://www.udemy.com/course/angular-7-e-integracao-de-apis/learn/lecture/12947538#overview
+
+https://gitlab.com/curso-angular7
+
