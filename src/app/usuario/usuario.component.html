@@ -1,0 +1,43 @@
+<section >
+  <div class="container ">
+    <div class="botao-cadastro">
+      <button  routerLink="cadastro" type="botao" class="botao verde mobile">Cadastrar Cliente</button>
+    </div>
+  <div class="tabela">
+    <table border="10px" class="tabela-user">
+      <tr>
+        <th>
+          ID
+        </th>
+        <th>
+          Nome
+        </th>
+        <th>
+          Email
+        </th>
+        <th>
+          Ações
+        </th>
+      </tr>
+      <tr *ngFor="let user of usuario;">
+        <td>
+          {{user.id}}
+        </td>
+        <td>
+          {{user.nome}}
+        </td>
+        <td>
+          {{user.email}}
+        </td>
+        <td>
+            <button type="botao" class="botao azul" routerLink="/cadastro/{{user.id}}" >editar</button>
+            <button type="botao" class="botao vermelho" (click)="deletar(user.id)" label="Deletar">excluir</button>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+</section>
+
+

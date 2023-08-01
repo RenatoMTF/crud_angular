@@ -1,0 +1,19 @@
+
+section{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4CAF50;
+}
+
+.container{
+  display: flex;
+  margin: 10px;
+}
+p{
+  font-size: 60px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(254, 255, 255);
+}

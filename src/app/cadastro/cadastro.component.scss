@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif;
+}
+
+/* Estilos para a divisão principal */
+.container {
+  display: flex;
+  height: 85vh;
+}
+
+/* Estilização para a imagem */
+.cadastro-img {
+  width: 50%;
+  height: 85vh;
+  background-color: #4CAF50; /* Cor que combina com o restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cadastro-img img {
+  max-width: 80%;
+  max-height: 80%;
+  height: auto;
+}
+
+/* Estilização para o formulário */
+.cadastro {
+  width: 50%;
+  height: 85vh;
+  background-color: #f2f2f2; /* Cor de fundo cinza */
+}
+
+.cadastro-header {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.cadastro-header h1 {
+  font-size: 40px;
+  color: #4CAF50;
+}
+
+.cadastro-input {
+  margin-bottom: 3vh;
+}
+
+.cadastro-input label {
+  display: block;
+  font-size: 25px;
+  color: #333;
+  margin-left: 10%;
+}
+
+.cadastro-input input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 8%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: right;
+  margin-top: 7vh;
+  margin-right: 8vw;
+}
+
+.botoes button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Estilos para dispositivos com largura máxima de 768px (tablets e celulares) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cadastro-img {
+    display: none; /* Altura do formulário ajustada para 40vh */
+  }
+
+  .cadastro {
+    max-width: 768px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .botoes button  {
+    position: static;
+    // width: 100%;
+    margin-top: 20px;
+  }
+
+}

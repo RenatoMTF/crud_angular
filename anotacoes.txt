@@ -1,0 +1,33 @@
+Comitando:
+comando para criar uma nova branch: (importante)
+
+git checkout dev-TipoErro
+
+comando para juntar branchs: (importante)
+
+git merge dev-TipoErro2
+
+comando para criar uma nova branch: (importante)
+
+git checkout -b dev-TipoErro
+
+status de cada arquivo para enivio:
+git status
+
+adicionando os arquivos para envio:
+git add . (adiciona todos asquivos)
+git add src/... (adiciona o arquivo especifico)
+
+comitando:
+git commit -m "mensagem do que foi feito" 
+
+subindo pro Git:
+git push
+
+Pegando alterações da brand:
+git pull
+
+Verificar branch:
+git branchgit 
+
+

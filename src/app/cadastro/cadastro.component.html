@@ -1,0 +1,53 @@
+<!-- <div class="content" id="cadastro">
+  <form>
+  <label>Digite seu Usuario:</label>
+  <input class="cadastro" type="text" id="nome" name="name" [(ngModel)]="usuario.nome" ><br>
+  <label> Digite Seu Email:</label><br>
+  <input class="cadastro" type="email" id="email" name="email" [(ngModel)]="usuario.email" ><br>
+  <label>Digite sua Senha:</label><br>
+  <input class="cadastro" type="password" id="password" name="password" [(ngModel)]="usuario.password"><br><br>
+
+</form>
+<div id="botoes">
+<button class="button"  pButton  (click)="salvar()">salvar</button>
+<button class="button" routerLink="usuario"> Sair</button>
+</div>
+</div> -->
+<section >
+  <div class="container ">
+
+    <div class="cadastro-img col-lg-6 order-1 order-lg-2">
+      <img src="https://mitis.com.br/wp-content/uploads/2023/04/logo_mitis_branca.png" alt="">
+    </div>
+
+    <div class="cadastro col-lg-6 order-2 order-lg-1">
+
+      <form>
+        <div class="cadastro-header">
+          <h1>Cadastro:</h1>
+        </div>
+
+        <div class="cadastro-input">
+          <label for="nome"> Digite um nome:</label><br>
+          <input type="nome" id="nome" name="nome" [(ngModel)]="usuario.nome" placeholder="Digite um Nome válido" required>
+      </div>
+
+          <div class="cadastro-input">
+              <label for="email"> Digite um Email:</label><br>
+              <input type="email" id="email" name="email" [(ngModel)]="usuario.email" placeholder="Digite um email válido" required>
+          </div>
+
+          <div class="cadastro-input">
+            <label for="password">Digite uma Senha:</label><br>
+            <input type="password" id="password" name="senha" [(ngModel)]="usuario.password" placeholder="Senha deve conter letras Mauisculas, minusculas e caracter especial" required>
+          </div>
+
+        <div class="botoes">
+          <button pButton  (click)=" ( id && id >0 ) ? editar() : salvar()"> Salvar</button>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+  </section>
